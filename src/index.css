@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  
+  --color-ink: #fafafa;
+  --color-paper: #09090b;
+  --color-sidebar: #18181b;
+  --color-line: rgba(255, 255, 255, 0.06);
+  --color-accent: #a855f7;
+  --color-accent-soft: rgba(168, 85, 247, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-paper)] text-[var(--color-ink)] font-sans antialiased selection:bg-purple-500/30;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+button, a, select {
+  touch-action: manipulation;
+}
+
+.technical-grid {
+  background-image: 
+    linear-gradient(var(--color-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-line) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.mono-value {
+  font-family: var(--font-mono);
+  letter-spacing: -0.02em;
+}
+
+.status-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

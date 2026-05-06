@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RootVault</string>
+    <string name="title_activity_main">RootVault</string>
+    <string name="package_name">com.rootvault.app</string>
+    <string name="custom_url_scheme">com.rootvault.app</string>
+</resources>

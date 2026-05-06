@@ -1,0 +1,6 @@
+{
+  "name": "RootVault",
+  "description": "Secure, local-first encrypted password manager inspired by minimalist design.",
+  "requestFramePermissions": ["clipboard-read", "clipboard-write", "publickey-credentials-get", "publickey-credentials-create"],
+  "majorCapabilities": []
+}
